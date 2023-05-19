@@ -1,4 +1,84 @@
-.main {
+.container {
+	--background-start-rgb: #001F54;
+  	--background-end-rgb: #034078;
+
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+	/* padding: 30px; */
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.title {
+	padding: 20px;
+	/* background-color: #034078; */
+	text-align: center;
+	/* color: #FEFCFB; */
+	width: 100%;
+}
+
+.description {
+	padding: 30px;
+	text-align: left;
+	align-self: flex-start;
+}
+
+.graphicsArea {
+	height: 90%;
+	width: 90%;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	/* background-color: #001F54; */
+	/* color: #FEFCFB; */
+}
+
+.footer h3 {
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+.authors {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 20px;
+}
+
+.local {
+	background-color: #001F54;
+	width: 100%;
+	padding: 10px;
+}
+
+/* .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,7 +187,7 @@
 .logo {
   position: relative;
 }
-/* Enable hover only on non-touch devices */
+Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
